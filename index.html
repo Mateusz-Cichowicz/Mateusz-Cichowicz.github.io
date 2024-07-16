@@ -39,6 +39,26 @@
             border: 2px solid #007bff;
             box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
         }
+        .btn-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px; 
+        }
+        .btn-custom {
+            flex: 1;
+            text-align: center;
+        }
+        .card {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        }
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            flex-grow: 1;
+        }
     </style>
 </head>
 <body data-spy="scroll" data-target="#navbar-example">
@@ -96,8 +116,10 @@
                         <div class="card-body">
                             <h3 class="card-title">Endless Runner</h3>
                             <p class="card-text">An engaging endless runner game created using Unity.</p>
-                            <a href="https://github.com/Mateusz-Cichowicz/Endless-Runner" class="btn btn-primary">View on GitHub</a>
-                            <a href="https://mateusz-cichowicz.github.io/Endless-Runner-Build/" class="btn btn-primary">Play</a>
+                            <div class="btn-container">
+                                <a href="https://github.com/Mateusz-Cichowicz/Endless-Runner" class="btn btn-primary btn-custom">View on GitHub</a>
+                                <a href="https://mateusz-cichowicz.github.io/Endless-Runner-Build/" class="btn btn-primary btn-custom">Play</a>
+                            </div>
                         </div>
                     </div>
                 </div>
